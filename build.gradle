@@ -1,0 +1,44 @@
+buildscript {
+    repositories {
+        jcenter()
+    }
+
+    dependencies {
+        classpath 'eu.appsatori:gradle-fatjar-plugin:0.3'
+    }
+}
+
+apply plugin: 'eu.appsatori.fatjar'
+apply plugin: 'java'
+apply plugin: 'maven'
+
+group = 'com.sample.lambda'
+version = '0.0.1-SNAPSHOT'
+
+description = """lambda-java"""
+
+sourceCompatibility = 1.6
+targetCompatibility = 1.6
+
+
+
+repositories {
+        
+     maven { url "http://repo.maven.apache.org/maven2" }
+}
+
+dependencies {
+    compile group: 'com.amazonaws', name: 'aws-lambda-java-core', version:'1.0.0'
+    compile group: 'com.amazonaws', name: 'aws-lambda-java-events', version:'1.0.0'
+    testCompile group: 'junit', name: 'junit', version:'4.4'
+}
+
+fatJar {
+}
+
+//task copyTestResources(type: Copy) {
+//    from "src/test/java/resources"
+//   into "build/classes/test"
+//}
+//.dependsOn copyTestResources
+//processTestResources.dependsOn copyTestResources
