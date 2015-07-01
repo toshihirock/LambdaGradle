@@ -20,13 +20,6 @@ dependencies {
     compile 'com.amazonaws:aws-lambda-java-events:1.0.0'
 
     testCompile 'junit:junit:4.11'
-    //testCompile group: 'joda-time', name: 'joda-time', version:'2.3'
-    //testCompile group: 'com.fasterxml.jackson.core', name: 'jackson-core', version:'2.5.4'
-
-    //testRuntime group
-    //testRuntime group: 'junit', name: 'junit', version:'4.4'
-    //testRuntime group: 'joda-time', name: 'joda-time', version:'2.3'
-    //testRuntime group: 'com.fasterxml.jackson.core', name: 'jackson-core', version:'2.5.4'
 }
 
 jar {
