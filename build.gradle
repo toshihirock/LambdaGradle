@@ -6,7 +6,7 @@ def defaultEncoding = 'UTF-8'
 group = 'com.sample.lambda'
 version = '0.0.1-SNAPSHOT'
 
-description = "lambda-java"
+description = "LambdaGradle"
 
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
