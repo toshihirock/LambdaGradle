@@ -63,9 +63,7 @@ public class TestUtils {
                 return mapper.readValue(stream, clazz);
             }
         } finally {
-            if (stream != null) {
-              stream.close();
-            }
+          stream.close();
         } 
     }
 

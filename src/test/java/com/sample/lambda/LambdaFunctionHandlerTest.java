@@ -19,7 +19,6 @@ public class LambdaFunctionHandlerTest {
     @BeforeClass
     public static void createInput() throws IOException {
         input = TestUtils.parse("s3-event.put.json", S3Event.class);
-        //input = TestUtils.parse("/home/ec2-user/LambdaTest/src/test/java/com/sample/lambda/s3-event.put.json", S3Event.class);
     }
 
     private Context createContext() {
