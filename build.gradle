@@ -15,11 +15,10 @@ apply plugin: 'maven'
 group = 'com.sample.lambda'
 version = '0.0.1-SNAPSHOT'
 
-description = """lambda-java"""
+description = "lambda-java"
 
-sourceCompatibility = 1.7
-targetCompatibility = 1.7
-
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
 
 repositories {
         
